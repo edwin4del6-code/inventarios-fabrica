@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 23% 97.5%;
+    --foreground: 222 30% 12%;
+    --card: 0 0% 100%;
+    --border: 220 14% 91%;
+    --muted: 220 16% 95.5%;
+    --muted-foreground: 220 9% 46%;
+    --primary: 134 54% 40%;
+    --primary-soft: 134 55% 95%;
+    --danger: 0 72% 51%;
+    --danger-soft: 0 86% 97%;
+    --warning: 35 92% 42%;
+    --warning-soft: 43 96% 94%;
+    --transit: 217 80% 55%;
+    --transit-soft: 217 90% 96%;
+    --store: 262 60% 58%;
+    --store-soft: 262 80% 97%;
+    --sold: 190 70% 38%;
+    --sold-soft: 190 70% 95%;
+  }
+  * { @apply border-border; }
+  html { -webkit-tap-highlight-color: transparent; }
+  body { @apply bg-background text-foreground font-sans antialiased; font-feature-settings: 'cv11'; }
+  h1, h2, h3 { @apply tracking-tight; }
+  input[type='number']::-webkit-inner-spin-button, input[type='number']::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+  input[type='number'] { -moz-appearance: textfield; }
+}
+
+@layer utilities {
+  .tabular { font-variant-numeric: tabular-nums; }
+  .scrollbar-thin { scrollbar-width: thin; }
+}
