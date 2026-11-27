@@ -1,5 +1,7 @@
 # Andina Foods · Inventario
 
+**App en vivo:** https://inventarios-fabrica-five.vercel.app
+
 Sistema de inventario para una empresa de alimentos que produce en su fábrica, despacha a su tienda y vende.
 Cada producto se sigue en cuatro etapas: **Fábrica → En tránsito → Tienda → Vendido**.
 
